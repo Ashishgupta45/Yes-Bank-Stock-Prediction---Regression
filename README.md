@@ -14,6 +14,8 @@ We have been given the data of Yes Bank stocks prices. Our first aim to understa
       
  <img target="_blank" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTRv3JihQuhGdRxFQGzt5mvuc6QGuQ_q_hkw&usqp=CAU.jpg" width=1000; height=300>
  
+ ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+ 
       I have been decided that i will divide the complete project into sub categories  that is read data, fill missing  values, drop NA values and duplicates, univariate  analysis, bivariate  analysis  correlation of our data, implementing different algorithms etc.
      I started with importing libraries needed for entire project, after importing we 
 did some basic analysis like head, tail, describe and info of our data and Shape of our data is 185 rows and 5 columns and there are zero null values in our dataframe.Then i checked for null and duplicate data we had zero null and duplicate values in our data frame . Our data frame is now clean. We can perform our other algorithms. Doing this we get some knowledge about data. we have 5 columns i.e. Date, Open, High, Low, Close. we had monthly stock price, The opening price is the price at which a security first trades upon the opening of an exchange on a trading day i.e. buyers and 
@@ -76,8 +78,8 @@ Open, high and low. after splitting i transform our data using minmaxscaler.afte
 <p> <i> Contact me for Data Science Project Collaborations</i></p>
 
 
-[![LinkedIn Badge](https://linkedin.com/in/ashishgupta45?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/almabetter/mycompany/)
-[![GitHub Badge](https://github.com/Ashishgupta45?style=for-the-badge&logo=github&logoColor=white)](https://github.com/orgs/AlmaBetter-School/)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-ashishgupta45?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/almabetter/mycompany/)
+[![GitHub Badge](https:////img.shields.io/badge/GitHub-Ashishgupta45?style=for-the-badge&logo=github&logoColor=white)](https://github.com/orgs/AlmaBetter-School/)
 [![Medium Badge](https://img.shields.io/badge/Medium-1DA1F2?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/almabetter)
 
 
