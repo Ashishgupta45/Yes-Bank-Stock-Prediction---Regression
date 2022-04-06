@@ -1,4 +1,10 @@
-# Yes-Bank-Stock-Prediction---Regression
+<h1 align="center"> Yes-Bank-Stock-Prediction </h1>
+<h3 align="center"> AlmaBetter Verfied Project - <a href="https://www.almabetter.com/"> AlmaBetter School </a> </h5>
+
+<p align="center"> 
+<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F866%2F1*QNPtTTF_g3fTvt39XcCxnw%402x.png&imgrefurl=https%3A%2F%2Fmedium.com%2Falmabetter&tbnid=AoQtSY2S79ZMiM&vet=12ahUKEwiLnuWZt__2AhUh_jgGHTDgAToQMygEegUIARCsAQ..i&docid=8Jb-eRdRRiNenM&w=866&h=184&q=almabetter&ved=2ahUKEwiLnuWZt__2AhUh_jgGHTDgAToQMygEegUIARCsAQ.jpg" height="382px">
+</p>
+
 Analyzing the data of yes bank stock price. data from 2005 to 2020.
 We have been given the data of Yes Bank stocks prices. Our first aim to understand the, what is stock market? How it works actually? And basic terminologies like stock opening price, closing, high, low etc. Our second aim is to identify actionable insights from our data and use basic analysis to give conclusions about key aspect of our data.
       Our problem statement was, "Yes Bank is a well-known bank in the Indian financial domain. Since 2018, it has been in the news because of the fraud case involving Rana Kapoor. Owing to this fact, it was interesting to see how that impacted the stock prices of the company and whether Time series models or any other predictive models can do justice to such situations. This dataset has monthly stock prices of the bank since its inception and includes closing, starting, highest, and lowest stock prices of every month. The main objective is to predict the stock’s closing price of the month".
