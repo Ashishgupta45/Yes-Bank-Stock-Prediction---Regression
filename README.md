@@ -16,9 +16,9 @@ We have been given the data of Yes Bank stocks prices. Our first aim to understa
  
  ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
  
-      I have been decided that i will divide the complete project into sub categories  that is read data, fill missing  values, drop NA values and duplicates, univariate  analysis, bivariate  analysis  correlation of our data, implementing different algorithms etc.
-     I started with importing libraries needed for entire project, after importing we 
-did some basic analysis like head, tail, describe and info of our data and Shape of our data is 185 rows and 5 columns and there are zero null values in our dataframe.Then i checked for null and duplicate data we had zero null and duplicate values in our data frame . Our data frame is now clean. We can perform our other algorithms. Doing this we get some knowledge about data. we have 5 columns i.e. Date, Open, High, Low, Close. we had monthly stock price, The opening price is the price at which a security first trades upon the opening of an exchange on a trading day i.e. buyers and 
+ 
+     I have been decided that i will divide the complete project into sub categories  that is read data, fill missing  values, drop NA values and duplicates, univariate  analysis, bivariate  analysis  correlation of our data, implementing different algorithms etc.
+     I started with importing libraries needed for entire project, after importing i did some basic analysis like head, tail, describe and info of our data and Shape of our data is 185 rows and 5 columns and there are zero null values in our dataframe.Then i checked for null and duplicate data we had zero null and duplicate values in our data frame . Our data frame is now clean. We can perform our other algorithms. Doing this i get some knowledge about data. we have 5 columns i.e. Date, Open, High, Low, Close. we had monthly stock price, The opening price is the price at which a security first trades upon the opening of an exchange on a trading day i.e. buyers and 
 sellers meet to make deals with the highest bidder, the opening price may not have to be the same as the last day's closing price, The high is the highest price at which a stock traded during a period, The low is the highest price at which a stock traded during a period, The closing price is a stock's trading price at the end of a trading day. This makes it the most recent price of a stock until the next trading session. The closing price is calculated as the weighted average price of the last 30 minutes, i.e. from 3:00 PM to 3:30 PM in case of equity. 
      The date column needs to be converted into a date time object. This is achieved by using strptime of the date time library. The Given Date format MMM-YY was converted to proper date of YYYY-MM-DD. Then we set date as our index of data. Then we plot a graph to know how price is moving. We found that up until 2018, the stock prices more or less, kept increasing but there was a sudden dip after that. This can be attributed to the Yes bank fraud case against Rana Kapoor.
      Then i performed univariate analysis for dependent and independent variable. When i plot distribution plot for univariate i saw that our data is positively skewed. Then i perform log transformation to convert skewed data to normal distribution. Why do i want data to be normally distributed?
@@ -79,7 +79,7 @@ Open, high and low. after splitting i transform our data using minmaxscaler.afte
 
 
 [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-ashishgupta45?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/almabetter/mycompany/)
-[![GitHub Badge](https:////img.shields.io/badge/GitHub-Ashishgupta45?style=for-the-badge&logo=github&logoColor=white)](https://github.com/orgs/AlmaBetter-School/)
+[![GitHub Badge](https://img.shields.io/badge/GitHub-Ashishgupta45?style=for-the-badge&logo=github&logoColor=white)](https://github.com/orgs/AlmaBetter-School/)
 [![Medium Badge](https://img.shields.io/badge/Medium-1DA1F2?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/almabetter)
 
 
