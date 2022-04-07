@@ -2,7 +2,7 @@
 
 <h3 align="center"> AlmaBetter Verfied Project - <a href="https://www.almabetter.com/"> AlmaBetter School </a> </h5>
 
-<p>I have developed a linear regresssion model in Python which predicts the price of yes bank.</p>
+<p>In this project i have developed a linear regression model in Python which predicts the stock price of yes bank.</p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
