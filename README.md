@@ -2,7 +2,7 @@
 
 <h3 align="center"> AlmaBetter Verfied Project - <a href="https://www.almabetter.com/"> AlmaBetter School </a> </h5>
 
-<p>In this project i have developed Auto ARIMA model in Python which predicts the stock closing price of yes bank.</p>
+<p>In this project i have developed LSTM & Auto ARIMA model in Python which predicts the stock closing price of yes bank.</p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
