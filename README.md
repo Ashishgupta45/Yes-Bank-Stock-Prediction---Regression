@@ -76,8 +76,68 @@ https://www.analyticsvidhya.com/blog/2018/08/auto-arima-time-series-modeling-pyt
 
 <h2> :books: Conclusion:</h2>
 
-1)
+1) For LSTM train test split was 70% training & 30% testing. RMSE value is 91.1222 & MSE value is 8,303.2553. 
+   that means it is far away from our actual value. 
+   
+2)<h3>Auto ARIMA before removing trend and seasonality:<h3>
+(we want hieghest Log Likeliohood and lowest information criteria (AIC))
+      
+i)dataset from 2005 to 2020
+Using auto arima model i got SARIMAX model as best model.
+Log likelihood:-812.490
+AIC: 1630.979
+      
+ii)dataset from 2005 to 2018
+we can see that our log likelihood and aic are improved.
+Log likelihood: -699.260
+AIC: 1404.520
+      
+iii)dataset from 2018 to 2020
+SARIMA MSE Error: 17585.44134
+SARIMA RMSE Error: 132.6101102
+      
+iv) After plotting graph, the expected and predicted values,initial few are correct but ARIMA is unable to predict the Dip that happened because of the fraud. The MSE was extremely high and not acceptable for prediction models.
 
+3)Auto ARIMA before removing trend and seasonality:
+
+To check if Auto ARIMA works well if the data isnt influenced by 
+Frauds or such sudden dips, data from 2018-2020 was neglected for 
+trial. data for 2017 was then considered to be test and the remaining
+ data before that was considered to be train, the model and the results 
+that were obtained as follows:
+
+i) from 2005 to 2017 dataset
+we can see that our log likelihood and aic are improved for SARIMAX.
+Log likelihood: -585.994
+AIC: 1175.988
+      
+ii)train dataset 2017 dataset
+we can see that our log likelihood and aic are improved.
+Log likelihood: -502.581
+AIC: 1007.162
+      
+iii)test dataset 2017
+SARIMA MSE Error: 7744.831967
+SARIMA RMSE Error: 88.0047
+R2 : -10.372904694067783
+
+As can be seen by this Model, the 2017 model predictions 
+are still very poor. Though MSE is much better than the one 
+with all data, it is evident that even with infraudulent data, 
+something is wrong.
+
+4) Auto ARIMA after removing trend and seasonality from 2005 to 2017:
+This model is MUCH MUCH better than the original 2017 model without detrending.
+SARIMAX MSE Error:  578.399636
+SARIMAX RMSE Error:  24.0499405
+
+5)Auto ARIMA after removing trend and seasonality from 2005 to 2020:
+SARIMAX MSE Error: 989.4628516
+SARIMAX RMSE Error: 31.45572844
+R2 : 0.9390712571002944
+
+6) After performing different model my best model is SARIMAX model after removing trend and seasonality.getting 93% accuracy. 
+ 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <h2> :books: References</h2>
@@ -101,6 +161,7 @@ https://www.analyticsvidhya.com/blog/2018/08/auto-arima-time-series-modeling-pyt
       <p>Available: https://www.analyticsvidhya.com/blog/2018/10/predicting-stock-price-machine-learningnd-deep-learning-techniques-python/</p>
   </li>
 </ul>
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- CREDITS -->
