@@ -139,8 +139,11 @@ with all data, it is evident that even with infraudulent data,
 something is wrong.
 
 4) Auto ARIMA after removing trend and seasonality from 2005 to 2017:
+
 This model is MUCH MUCH better than the original 2017 model without detrending.
+
 SARIMAX MSE Error:  578.399636
+
 SARIMAX RMSE Error:  24.0499405
 
 5) Auto ARIMA after removing trend and seasonality from 2005 to 2020:
