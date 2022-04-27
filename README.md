@@ -34,7 +34,7 @@ Close -The closing price is a stock's trading price at the end of a trading day.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<h2> :book: </h2>
+<h2> :book: LSTM </h2>
 Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning (DL). Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems).
 
 A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell.
@@ -47,9 +47,60 @@ https://www.analyticsvidhya.com/blog/2017/12/fundamentals-of-deep-learning-intro
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
+<h2> :book: Auto ARIMA </h2>
+
+Just to give a brief about how Auto ARIMA works. Auto ARIMA is like a grid search for time series models, it tries ARIMA, SARIMA, SARIMAX, all ARIMA related models depending on the parameters that are applied to it. The auto_arima function seeks to identify the most optimal parameters for an ARIMA model, and returns a fitted ARIMA model. This function is based on the commonly-used R function, forecast::auto.arima
+
+The auto_arima function works by conducting differencing tests (i.e., Kwiatkowski–Phillips–Schmidt–Shin, Augmented Dickey-Fuller or Phillips–Perron) to determine the order of differencing, d, and then fitting models within ranges of defined start_p, max_p, start_q, max_q ranges. If the seasonal optional is enabled, auto_arima also seeks to identify the optimal P and Q hyper- parameters after conducting the Canova-Hansen to determine the optimal order of seasonal differencing, D.
+
+Here's the link to its documentation and User Guide, if you want to know about it in detail:
+
+https://alkaline-ml.com/pmdarima/0.9.0/modules/generated/pyramid.arima.auto_arima.html
+
+The main idea is that you don't really need to worry about differencing orders and keep trying different orders or look at ACF charts to come to the correct fitted parameters, Auto ARIMA would do that for you automatically.
+
+Here, the parameters which are supplied are: m= 12 indicatinng monthly range of Date
+
+seasonal True, which we saw from the decomposed chart
+
+and max iterations is set to 200 so that it analyses as many possible combinations of parameters before sticking to a local minima. Usually 200 works, However, higher the better, though that may take longer time.
+
+Basic steps to use Auto ARIMA include:
+
+Using the Auto_Arima funtion on the series to obtain Model Parameters (p,d,q) (P, D, Q, m) Using the parameters obtained, running a model through statsmodels ARIMA/SARIMA on your training set Obtaining predicted values on the test set based on the model run in Step 2 Comparing and Plotting predictions to expected values Evaluating the model through MSE OR MAE
+
+for detail information read this:
+https://www.analyticsvidhya.com/blog/2018/08/auto-arima-time-series-modeling-python-r/
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 <h2> :books: Conclusion:</h2>
 
-1)ssssssssss
+1)
+
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+<h2> :books: References</h2>
+<ul>
+  <li><p>Medium.com, 'what is auto ARIMA?' [Online].</p>
+      <p>Available: https://medium.com/featurepreneur/what-is-auto-arima-b8025c6d732d</p>
+  </li>
+  <li><p>Wikipedia.org, 'LSTM'. [Online].</p>
+      <p>Available: https://en.wikipedia.org/wiki/Long_short-term_memory</p>
+  </li>
+  <li><p>Wikipedia.org, 'Auto ARIMA'. [Online].</p>
+      <p>Available: https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average</p>
+  </li>
+  <li><p> 'Time series analysis'. [Online].</p>
+      <p>Available: https://michael-fuchs-python.netlify.app/2020/10/19/time-series-analysis-working-with-dates-and-times/</p>
+  </li>
+  <li><p>Manisha-sirsat.blogspot.com, 'What is Confusion Matrix and Advanced Classification Metrics?'. [Online].</p>
+      <p>Available: https://manisha-sirsat.blogspot.com/2019/04/confusion-matrix.html</p>
+  </li>
+  <li><p>analyticsvidhya.com, 'machine learning & deep learning approachr'. [Online].</p>
+      <p>Available: https://www.analyticsvidhya.com/blog/2018/10/predicting-stock-price-machine-learningnd-deep-learning-techniques-python/</p>
+  </li>
+</ul>
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- CREDITS -->
