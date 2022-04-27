@@ -79,7 +79,7 @@ https://www.analyticsvidhya.com/blog/2018/08/auto-arima-time-series-modeling-pyt
 1) For LSTM train test split was 70% training & 30% testing. RMSE value is 91.1222 & MSE value is 8,303.2553. 
    that means it is far away from our actual value. 
    
-2)<h3>Auto ARIMA before removing trend and seasonality:<h3>
+2)Auto ARIMA before removing trend and seasonality:
 (we want hieghest Log Likeliohood and lowest information criteria (AIC))
       
 i)dataset from 2005 to 2020
