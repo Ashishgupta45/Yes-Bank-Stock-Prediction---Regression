@@ -10,7 +10,6 @@
 
 Analyzing the data of yes bank stock price. data from 2005 to 2020.
 We have been given the data of Yes Bank stocks prices. Our first aim to understand the, what is stock market? How it works actually? And basic terminologies like stock opening price, closing, high, low etc. Our second aim is to identify actionable insights from our data and use basic analysis to give conclusions about key aspect of our data.
-
       Our problem statement was, "Yes Bank is a well-known bank in the Indian financial domain. Since 2018, it has been in the news because of the fraud case involving Rana Kapoor. Owing to this fact, it was interesting to see how that impacted the stock prices of the company and whether Time series models or any other predictive models can do justice to such situations. This dataset has monthly stock prices of the bank since its inception and includes closing, starting, highest, and lowest stock prices of every month. The main objective is to predict the stock’s closing price of the month".
       
  <img target="_blank" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTRv3JihQuhGdRxFQGzt5mvuc6QGuQ_q_hkw&usqp=CAU.jpg" width=1000; height=300>
